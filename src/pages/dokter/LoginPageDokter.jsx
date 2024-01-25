@@ -18,7 +18,7 @@ function LoginPageDokter() {
 
 
           localStorage.setItem('token', response.data.token);
-          navigate('/dashboard/pasien')
+          navigate('/dashboard/dokter')
 
     
         } catch (error) {

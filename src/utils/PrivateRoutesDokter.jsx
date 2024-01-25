@@ -19,21 +19,17 @@ function PrivateRoutesDokter() {
         const decodedToken = jwtDecode(token);
   
         // Mendapatkan informasi dari payload
-        const userId = decodedToken.sub;  // Subjek atau ID pengguna
+       
         const userRole = decodedToken.role; // Contoh klaim tambahan 'role'
         const expirationTime = decodedToken.exp * 1000;  // Waktu kedaluwarsa dalam milidetik
   
-        console.log('Token decoded successfully');
-        console.log('User ID:', userId);
-        console.log('User Role:', userRole);
-        console.log('Decoded Token:', decodedToken);
   
         // Pemeriksaan apakah token sudah kedaluwarsa
         const currentTime = new Date().getTime();
         if (currentTime < expirationTime) {
           // Token valid dan belum kedaluwarsa
           // Cek rolenya
-          if (userRole === 'pasien') {
+          if (userRole === 'dokter') {
             // Biarkan pengguna melanjutkan ke Outlet
             return;
           } else {

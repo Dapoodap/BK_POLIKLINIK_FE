@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
-import { Button, Container, FormCheck } from "react-bootstrap"
-import { Form, Link, useNavigate } from "react-router-dom"
+import { Button, Container, Form, FormCheck } from "react-bootstrap"
+import {  Link, useNavigate } from "react-router-dom"
 
 function LoginPageAdmin() {
     const navigate = useNavigate();
@@ -18,7 +18,7 @@ function LoginPageAdmin() {
 
 
           localStorage.setItem('token', response.data.token);
-          navigate('/dashboard/pasien')
+          navigate('/dashboard/admin')
 
     
         } catch (error) {
