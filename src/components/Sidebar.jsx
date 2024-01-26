@@ -176,7 +176,7 @@ const Sidebar = () => {
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link as={Link} to="/memeriksa-pasien" className="nav-link" eventKey="memeriksa-pasien" style={navLinkStyle}>
+          <Nav.Link as={Link} to="/periksa-pasien" className="nav-link" eventKey="memeriksa-pasien" style={navLinkStyle}>
             <FaStethoscope style={iconStyle} />
             Memeriksa Pasien
             <Badge bg='danger' style={badgeStyle}>Dokter</Badge>

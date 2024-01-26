@@ -1,6 +1,5 @@
-
-import NavigationBar from "../../components/NavigationBar"
 import Sidebar from "../../components/Sidebar"
+import WidgetsDropdown from "../../components/WidgetsDropdown"
 
 
 function DashboardPagePasien() {
@@ -9,10 +8,8 @@ function DashboardPagePasien() {
     <div className="dashboard-container" style={{ display:'flex' }}>
     {localStorage.getItem('token')?<Sidebar />:<></>}
     <div className="dashboard-content" style={{ flexGrow:'1',padding:'10px' }}>
-      {/* Konten halaman DashboardPasien */}
-      <NavigationBar/>
-      <h1>Welcome to Pasien Dashboard!</h1>
-      {/* Tambahkan konten sesuai kebutuhan Anda */}
+      <h1 className="my-5">Welcome to Pasien Dashboard!</h1>
+      <WidgetsDropdown/>
     </div>
   </div>
   )

@@ -63,10 +63,6 @@ function LoginPageDokter() {
               Login
             </Button>
           </Form>
-
-          <div className="text-center mt-4">
-            <Link to="/pasien/register">Register Akun</Link>
-          </div>
         </div>
       </Container>
     </Container>

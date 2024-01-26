@@ -75,6 +75,21 @@ function Homepage() {
           </p>
           <Link to={"/dokter/login"}>klink link Berikut →</Link>
         </div>
+        <div
+          style={{
+            maxWidth: "500px",
+            height: "fit-content",
+            textAlign: "left",
+          }}
+        >
+          <img src={icon} alt="" style={{ width: "60px" }} />
+          <h4 className="my-3">Login Sebagai Admin</h4>
+          <p>
+            Apabila Anda adalah seorang Admin, silahkan Login terlebih dahulu
+            untuk memulai Mengelola Poli!
+          </p>
+          <Link to={"/admin/login"}>klink link Berikut →</Link>
+        </div>
       </Container>
       <hr className="my-5" />
 

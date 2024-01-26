@@ -20,6 +20,11 @@ import KelolaObat from './pages/admin/KelolaObat';
 import EditPasien from './pages/admin/EditPasien';
 import EditPoli from './pages/admin/EditPoli';
 import EditObat from './pages/admin/EditObat';
+import JadwalPeriksa from './pages/dokter/JadwalPeriksa';
+import PeriksaPasien from './pages/dokter/PeriksaPasien';
+import PeriksaPasienForm from './pages/dokter/PeriksaPasienForm';
+import EditPeriksa from './pages/dokter/EditPeriksa';
+import RiwayatPasien from './pages/dokter/RiwayatPasien';
 
 function App() {
   return (
@@ -49,6 +54,11 @@ function App() {
       </Route>
       <Route element={<PrivateRoutesDokter/>}>
         <Route path="/dashboard/dokter" element={<DashboardPageDokter/>} />
+        <Route path="/jadwal-periksa" element={<JadwalPeriksa/>} />
+        <Route path="/periksa-pasien" element={<PeriksaPasien/>} />
+        <Route path="/periksa-form" element={<PeriksaPasienForm/>} />
+        <Route path="/edit-periksa" element={<EditPeriksa/>} />
+        <Route path="/riwayat-pasien" element={<RiwayatPasien/>} />
       </Route>
     </Routes>
   );
